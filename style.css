@@ -1048,11 +1048,11 @@ background-color:var(--text-color);
   color: var(--prime-color);
 }
 
-.footer-about .social-icon a {
+.footer-about .social a {
   margin-right: 10px;
 }
 
-.footer-about .social-icon i {
+.footer-about .social i {
   width: 35px;
   height: 35px;
   display: flex;
@@ -1064,7 +1064,7 @@ background-color:var(--text-color);
   transition: var(--transition);
 }
 
-.footer-about .social-icon i:hover {
+.footer-about .social i:hover {
   background-color: var(--prime-color);
   color: var(--white-color);
 }
@@ -1075,4 +1075,5 @@ background-color:var(--text-color);
   font-size: 0.9rem;
   color: var(--text-color3);
 }
+
 
