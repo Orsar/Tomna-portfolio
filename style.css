@@ -931,6 +931,35 @@ background-color:var(--text-color);
   gap: 50px;
   flex-wrap: wrap;
 }
+.contact-container .social{
+  display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.social i{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 30px;
+    height: 30px;
+    font-size:1.2rem;
+    color: var(--prime-color);
+    background-color: transparent;
+    border: 1px solid var(--prime-color);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social i:hover{
+    color:var(--black-color) ;
+     background-color: transparent;
+    border: 1px solid var(--black-color);
+    border-radius: 50%;
+
+}
 
 .contact-info {
   flex: 1;
@@ -1007,7 +1036,10 @@ background-color:var(--text-color);
   gap: 50px;
   flex-wrap: wrap;
 }
-
+.footer-about .social{
+  display: flex;
+  flex-wrap: wrap;
+}
 .footer-about h2 {
   color: var(--prime-color);
   font-size: 1.8rem;
@@ -1075,5 +1107,6 @@ background-color:var(--text-color);
   font-size: 0.9rem;
   color: var(--text-color3);
 }
+
 
 
