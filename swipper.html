@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Swiper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f0f0f0;
+        }
+
+        .swiper-container {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .swiper-slide {
+            min-width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .slide1 { background: #ff6b6b; }
+        .slide2 { background: #1dd1a1; }
+        .slide3 { background: #54a0ff; }
+    </style>
+</head>
+<body>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">Slide 1</div>
+        <div class="swiper-slide slide2">Slide 2</div>
+        <div class="swiper-slide slide3">Slide 3</div>
+    </div>
+</div>
+
+<script>
+    const wrapper = document.querySelector('.swiper-wrapper');
+    const slides = document.querySelectorAll('.swiper-slide');
+    let index = 0;
+    const total = slides.length;
+
+    function showNextSlide() {
+        index++;
+        if(index >= total) index = 0;
+        wrapper.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // Auto slide every 3 seconds
+    setInterval(showNextSlide, 3000);
+</script>
+
+</body>
+</html>
+ <div class="swiper-slide">
+        <!-- Slide -->
+        <div class="test-slide">
+          <img src="photos/Bold Quotation Marks on White (1).png" alt="" class="quate-img">
+          <div class="client-img">
+            <img src="photos/IMG me.jpg" alt="">
+          </div>
+          <p>A fantastic experience from start to finish. The work speaks for itself.</p>
+          <h1>Mark Memga, Customer</h1>
+        </div>
+      </div>

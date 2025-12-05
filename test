@@ -1,0 +1,99 @@
+          /* /*PORTFOLIO SECTION  */
+
+.portfolios{
+             flex-direction: column;
+             gap: 50px;
+          }
+
+
+
+.category{
+           width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+
+
+ .category button{
+            width: 100%; 
+            height: 40px; 
+             border: 1px solid var(--text-color3);
+             background-color: transparent;
+             border-radius: 5px;
+             display: flex;      
+             align-items: center;
+             justify-content: center;
+             text-align: center;
+             color: var(--text-color3);
+             transition: var(--transition);
+          }         
+.category button:hover{
+           background-color: var(--text-color3);
+           color:var(--white-color);
+        }
+
+
+
+.porfolio-image{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            
+        }
+
+
+.portfolio-img{
+            position: relative;
+           overflow: hidden;
+            }       
+
+.portfolio-img::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% -50%);
+            width: 0%; 
+            height: 0%;
+            opacity: 0;
+            background:rgba(47, 178, 152, 0.533) ;
+            backdrop-filter: blur(2px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:var(--white-color);
+            cursor: pointer;
+            transition: var(--transition2);
+           
+        }   
+ 
+.portfolio-img:hover::after{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+}
+.Portfolio1::after{
+    content: 'Slider Images';
+}
+
+.Portfolio2::after{
+    content: 'Youtube Video';
+}
+
+.Portfolio3::after{
+    content: 'Multi Images Big';
+}
+
+.Portfolio4::after{
+    content: 'Slider Images Big';
+}
+.Portfolio5::after{
+    content: 'Slider Images';
+}
+.Portfolio6::after{
+    content: 'Slider Images';
+}
